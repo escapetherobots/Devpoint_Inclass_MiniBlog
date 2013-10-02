@@ -30,6 +30,17 @@
   <%= @author.twitter %>
 </p>
 
+<h3> <%= @author.first_name %>'s posts</h3>
+<% @author.posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <%= link_to post.title.titleize, post %>
+    <%= post.body %>
+    
+    <%= post.published_at %>
+  
+  
+<% end %>
+
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>

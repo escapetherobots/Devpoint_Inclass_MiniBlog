@@ -1,18 +1,22 @@
 <h1>Listing posts</h1>
 
-
+<% writer = "Ben" %>
 
 <% @posts.each do |post| %>
     <h2><%= post.title %></h2>
     <%= post.title %>
     <%= post.body %>
-    <%= post.author_name %>
+    <%= link_to(post.author.try(:username), author_path(post.author)) if post.author %>
+    <%# post.author.first_name if post.author %>
     <%= post.published_at %>
     <%= link_to 'Show', post %>
     <%= link_to 'Edit', edit_post_path(post) %>
     <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    <%# The next line will add the variable in each loop%>
+    <%# writer %>
   
 <% end %>
 
-
+<br><br>
 <%= link_to 'New Post', new_post_path %>

@@ -12,13 +12,14 @@
 
 <p>
   <b>Author name:</b>
-  <%= @post.author_name %>
+  <%= link_to(@post.author.try(:username), author_path(@post.author)) if @post.author %> | <%= time_tag(@post.published_at) %>
 </p>
 
 <p>
   <b>Published at:</b>
   <%= @post.published_at %>
 </p>
+
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
