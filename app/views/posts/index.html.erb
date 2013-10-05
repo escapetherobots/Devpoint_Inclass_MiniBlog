@@ -1,8 +1,11 @@
 <h1>Listing posts</h1>
 
-<% writer = "Ben" %>
+<%# writer = "Ben" %>
+
+<%= link_to 'New Post', new_post_path, class: 'btn_newpost' %>
 
 <% @posts.each do |post| %>
+   <div class="comment_area"> 
     <h2><%= post.title %></h2>
     <%= post.title %>
     <%= simple_format(truncate(post.body, length: 140, separator: ' ', omission: "...(continued)") + link_to('continue', post)) %>
@@ -15,8 +18,8 @@
 
     <%# The next line will add the variable in each loop%>
     <%# writer %>
-  
+  </div><!--end div comment area-->
 <% end %>
 
-<br><br>
-<%= link_to 'New Post', new_post_path %>
+
+

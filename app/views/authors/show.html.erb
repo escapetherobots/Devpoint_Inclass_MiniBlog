@@ -12,17 +12,18 @@
 
 <p>
   <b>Username:</b>
-  <%= @author.username %>
+  <%= @author.username %><br />
+  <div id="twitter_bird"></div><%= link_to "@#{@author.twitter}", @author.twitter_link, target: '_blank' %>
 </p>
 
 <p>
   <b>Bio:</b>
-  <%= @author.bio %>
+  <%= simple_format(@author.bio) %>
 </p>
 
 <p>
   <b>Email:</b>
-  <%= @author.email %>
+  <%= mail_to @author.email %>
 </p>
 
 <p>

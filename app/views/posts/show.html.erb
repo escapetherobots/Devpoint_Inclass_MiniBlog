@@ -30,11 +30,14 @@
   <% end %>
 
 <% @post.comments.each do |comment| %>
+<div class="comment_area">
   <h4><%= comment.commenter_name %></h4>
   <p><%= comment.message %></p>
+ </div> <!--end div comment area-->
 <% end %>
 
 <%= form_for(@comment) do |f| %>
+  
   <% if @comment.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
@@ -56,8 +59,7 @@
     <%= f.text_area :message %>
   </div>
   <div class="field">
-    <%= f.hidden_field :post_id %><br />
-    <%= f.hidden_field :post_id %>
+    <%= f.text_field :post_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

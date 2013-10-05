@@ -1,13 +1,41 @@
 body {
-  background-color: #fff;
+  background:url('http://bia4game.persiangig.com/image/watercolor-grunge-000002-gray-black.jpg') repeat-x top center #000000; 
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Roboto Condensed', helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+#wrapper {
+height:auto;
+width:960px;
+margin:50px auto;
+background:#cccccc;
+border-radius:20px;
+padding:40px;
+opacity:0.7;
+filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#twitter_bird {height:24px;width:24px;background:url('https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png') -80px 0}
+
+.btn_newpost {padding:5px;background:green;border-radius:6px;margin-bottom:10px;font-size:30px;margin-top:30px;color:white !important;text-decoration:none;}
+nav ul {margin-left:0px;padding-left:0px;}
+nav:nth-child(1) {margin-left:0px !important;}
+nav li {display:inline;text-decoration:none;margin-right:20px;}
+nav li a {text-decoration:none;font-size:20px;font-weight:bolder;color:#ffffff !important;}
+nav li a:hover {color:red !important; background:none;}
+
+.comment_area:nth-of-type(even) {background:green !important;color:white}
+
+.comment_area {background:#999999;border-radius:10px;padding:5px 20px;margin-bottom:10px;}
+div.comment_area {color:#333333;}
+.comment_area:nth-child(2) {color:#ffffff !important;}
+
+h1, h2, h3 {font-family: 'Roboto Condensed', helvetica, sans-serif;}
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Roboto Condensed', helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
