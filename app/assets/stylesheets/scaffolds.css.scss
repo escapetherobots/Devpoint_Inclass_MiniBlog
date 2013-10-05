@@ -17,7 +17,8 @@ opacity:0.7;
 filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
-#twitter_bird {height:24px;width:24px;background:url('https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png') -80px 0}
+#twitter_bird {float:left;height:24px;width:24px;background:url('https://abs.twimg.com/a/1380824991/t1/img/twitter_web_sprite_icons.png') -80px 0;display:inline}
+#twitter_info{display:inline;float:left;height:24px;width:auto;}
 
 .btn_newpost {padding:5px;background:green;border-radius:6px;margin-bottom:10px;font-size:30px;margin-top:30px;color:white !important;text-decoration:none;}
 nav ul {margin-left:0px;padding-left:0px;}
