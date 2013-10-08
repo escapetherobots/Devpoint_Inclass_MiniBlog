@@ -1,0 +1,4 @@
+LOG:  database system was shut down at 2013-10-07 17:59:30 MDT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "mini_blog_production" does not exist
