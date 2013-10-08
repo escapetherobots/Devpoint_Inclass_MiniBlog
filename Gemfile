@@ -13,7 +13,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :development do
+group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -21,6 +21,9 @@ group :development do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
   gem 'powder'
   gem 'pry-rails'
   gem 'pry-doc'
